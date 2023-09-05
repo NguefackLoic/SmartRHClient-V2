@@ -1,0 +1,192 @@
+<main class="h-full pb-16 overflow-y-auto">
+<div class="container px-6 mx-auto grid">
+  <h2 class="my-6 text-2xl font-semibold text-gray-700 dark:text-gray-200">ENREGISTRER UN NOUVEAU EMPLOYE</h2>
+  <h4 class="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300">Information Generales</h4>
+<div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800" [hidden]="submitted">
+<form (ngSubmit)="onSubmit()">
+<div class="flex flex-wrap -mx-4 mb-6">
+  <div class="w-full md:w-1/4 px-3">
+    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="name">
+      Nom
+    </label>
+    <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="name" type="text" 
+    >
+  </div>
+  <div class="w-full md:w-1/4 px-3">
+      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+       Sts. Matrim. 
+      </label>
+      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text">
+  </div>
+  <div class="w-full md:w-1/4 px-3">
+    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+      Sal. Base
+    </label>
+    <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="number">
+</div>
+<div class="w-full md:w-1/4 px-3">
+  <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+      <span class="text-gray-700 dark:text-gray-400">
+        Departement
+      </span>
+      <select class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray">
+        <option></option>
+        <option>$5,000</option>
+        <option>$10,000</option>
+        <option>$25,000</option>
+      </select>
+   </label>
+</div>
+</div>
+
+<div class="flex flex-wrap -mx-4 mb-6">
+  <div class="w-full md:w-1/4 px-3">
+    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+      Prenom
+    </label>
+    <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text">
+  </div>
+  <div class="w-full md:w-1/4 px-3">
+      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+        Email
+      </label>
+      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text">
+  </div>
+  <div class="w-full md:w-1/4 px-3">
+    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+      Retenu
+    </label>
+    <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text">
+</div>
+<div class="w-full md:w-1/4 px-3">
+  <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+      <span class="text-gray-700 dark:text-gray-400">
+        centre
+      </span>
+      <select class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray">
+        <option></option>
+        <option>$5,000</option>
+        <option>$10,000</option>
+        <option>$25,000</option>
+      </select>
+   </label>
+</div>
+</div>
+
+<div class="flex flex-wrap -mx-4 mb-6">
+  <div class="w-full md:w-1/4 px-3">
+    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+      Date Nais
+    </label>
+    <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="date">
+  </div>
+  <div class="w-full md:w-1/4 px-3">
+      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+        Date Embauche
+      </label>
+      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="date">
+  </div>
+  <div class="w-full md:w-1/4 px-3">
+    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+      Mat CPNPS
+    </label>
+    <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text">
+</div>
+<div class="w-full md:w-1/4 px-3">
+  <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+      <span class="text-gray-700 dark:text-gray-400">
+        Categorie
+      </span>
+      <select class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray">
+        <option></option>
+        <option>$5,000</option>
+        <option>$10,000</option>
+        <option>$25,000</option>
+      </select>
+   </label>
+</div>
+</div>
+
+<div class="flex flex-wrap -mx-4 mb-6">
+  <div class="w-full md:w-1/4 px-3">
+    <div class="flex items-center mb-4">
+      <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+      <label for="default-radio-1" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Masculin</label>
+  </div>
+  <div class="flex items-center">
+      <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+      <label for="default-radio-2" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Feminin</label>
+  </div>
+  </div>
+  <div class="w-full md:w-1/4 px-3">
+      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+        Num Banque
+      </label>
+      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text">
+  </div>
+  <div class="w-full md:w-1/4 px-3">
+    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+      Type Contrat
+    </label>
+    <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text">
+</div>
+<div class="w-full md:w-1/4 px-3">
+  <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+      <span class="text-gray-700 dark:text-gray-400">
+        Echelon
+      </span>
+      <select class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray">
+        <option></option>
+        <option>$5,000</option>
+        <option>$10,000</option>
+        <option>$25,000</option>
+      </select>
+   </label>
+</div>
+</div>
+
+<div class="flex flex-wrap -mx-4 mb-6">
+  <div class="w-full md:w-1/4 px-3">
+    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+      Telephone
+    </label>
+    <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text">
+  </div>
+  <div class="w-full md:w-1/4 px-3">
+      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+        Num Compte
+      </label>
+      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text">
+  </div>
+  <div class="w-full md:w-1/4 px-3">
+    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+      Mode paie
+    </label>
+    <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text">
+</div>
+<div class="w-full md:w-1/4 px-3">
+  <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+      <span class="text-gray-700 dark:text-gray-400">
+        Post. occupé
+      </span>
+      <select class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray">
+        <option></option>
+        <option>$5,000</option>
+        <option>$10,000</option>
+        <option>$25,000</option>
+      </select>
+   </label>
+</div>
+</div>
+<div class="flex justify-center flex-1 lg:mr-32"></div>
+<div>
+  <button
+    class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"
+  >
+    Confirmer
+  </button>
+</div>
+</form>
+</div>
+</div>
+</main>
